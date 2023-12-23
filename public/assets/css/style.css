@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/* Definimos las Custom properties */
+:root {
+  /* Colores */
+  --negro: #393939;
+  /* Tipografía */
+  --tipo-principal: Roboto, Helvetica, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+/* (Opcional) Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+/* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* (Opcional) */
+  object-fit: cover;
+  /* (Opcional) */
+  object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* (Opcional) Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* (Opcional) Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* (Opcional) */
+  appearance: none;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* (Opcional) */
+  hyphens: auto;
+  /* (Opcional) */
+  font-smooth: always;
+  /* (Opcional) */
+  -webkit-font-smoothing: antialiased;
+  /* (Opcional) */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* For webkit-based browsers (Chrome, Safari, Edge) */
+/* Customize the scrollbar track (the background behind the thumb) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Customize the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* On hover, change the color of the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+  cursor: pointer;
+}
+
+:root {
+  --navbar-height: 100px;
+  --footer-height: 80px;
+}
+
+body {
+  background-color: #150033;
+}
+
+.modal-content {
+  padding: 1rem;
+  color: white;
+  border-radius: 0.8rem;
+  background-color: #3b008d;
+}
+
+.header {
+  min-height: var(--navbar-height);
+  align-items: center;
+  background-color: #6200ee;
+  display: flex;
+  justify-content: left;
+  padding: 1.6rem;
+  gap: 1rem;
+}
+.header__h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+.header__img {
+  width: 44px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: calc(100vh - (var(--navbar-height) + var(--footer-height)));
+  padding: 1rem;
+  width: 100%;
+}
+
+.item-container {
+  width: 32%;
+  padding: 2rem;
+}
+.item-container__header {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-container__header__title {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.item-container:nth-child(2) {
+  background-color: #3b008d;
+  border-radius: 0.6rem;
+  align-self: flex-start;
+}
+
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.expense-form-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+@media (max-width: 1100px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-container {
+    width: 100%;
+  }
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .expense-form {
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: row;
+  }
+  .expense-form .form-group {
+    width: 100%;
+  }
+}
+.footer {
+  align-items: center;
+  background-color: #6200ee;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  min-height: var(--footer-height);
+  justify-content: center;
+  padding: 1.6rem;
+}
+.footer__subtitle {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+.footer__p {
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+}
+
+.btn-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-container__icon {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,0 @@
-{
-	"roommates": [
-		{ "id": "9bc572", "nombre": "Mr Zen Zen", "debe": 10000, "recibe": 0 },
-		{ "id": "934b80", "nombre": "Mr Ruben Ruben", "debe": 15000, "recibe": 0 },
-		{ "id": "7f0c96", "nombre": "Mr Veeti Veeti", "debe": 0, "recibe": 0 }
-	]
-}

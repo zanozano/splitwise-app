@@ -1,0 +1,146 @@
+@use "reset";
+@use "scroll-style";
+
+:root {
+    --navbar-height: 100px;
+    --footer-height: 80px;
+}
+
+
+body {
+    background-color: #150033;
+}
+
+.modal-content {
+    padding: 1rem;
+    color: white;
+    border-radius: 0.8rem;
+    background-color: #3b008d;
+}
+
+.header {
+    min-height: var(--navbar-height);
+    align-items: center;
+    background-color: #6200ee;
+    display: flex;
+    justify-content: left;
+    padding: 1.6rem;
+    gap: 1rem;
+
+    &__h1 {
+        font-size: 2.4rem;
+        margin: 0;
+    }
+
+    &__img {
+        width: 44px;
+    }
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    min-height: calc(100vh - (var(--navbar-height) + var(--footer-height)));
+    padding: 1rem;
+    width: 100%;
+}
+
+
+.item-container {
+    width: 32%;
+    padding: 2rem;
+
+    &__header {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+    }
+
+}
+
+.item-container:nth-child(2) {
+    background-color: #3b008d;
+    border-radius: 0.6rem;
+    align-self: flex-start;
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+.expense-form-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+@media (max-width: 1100px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-container {
+        width: 100%;
+
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    .expense-form {
+        display: flex;
+        gap: 1.4rem;
+        flex-direction: row;
+
+        & .form-group {
+            width: 100%;
+        }
+    }
+}
+
+.footer {
+    align-items: center;
+    background-color: #6200ee;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    min-height: var(--footer-height);
+    justify-content: center;
+    padding: 1.6rem;
+
+    &__subtitle {
+        font-size: 1.6rem;
+        margin: 0;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__p {
+        font-size: 0.9rem;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.btn-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+
+        cursor: pointer;
+    }
+}
