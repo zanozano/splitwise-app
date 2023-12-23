@@ -1,49 +1,9 @@
 {
   "roommates": [
     {
-      "id": "cb5ee0",
-      "name": "Monsieur Ivo Dumas",
-      "debt": 0
-    },
-    {
-      "id": "d86733",
-      "name": "Mrs Ece Paksüt",
-      "debt": 0
-    },
-    {
-      "id": "c99a6e",
-      "name": "Mr Lohan Fournier",
-      "debt": 2
-    },
-    {
-      "id": "113351",
-      "name": "Mr Max Pearson",
-      "debt": 0
-    },
-    {
-      "id": "40d822",
-      "name": "Mrs Tina Karle",
-      "debt": 0
-    },
-    {
-      "id": "009821",
-      "name": "Mr Augustin Blanc",
-      "debt": 0
-    },
-    {
-      "id": "dda7c5",
-      "name": "Ms Laurie Cole",
-      "debt": 0
-    },
-    {
-      "id": "e1439a",
-      "name": "Mrs Meral Körmükçü",
-      "debt": 0
-    },
-    {
-      "id": "e4b04a",
-      "name": "Mr Graciliano Jesus",
-      "debt": 0
+      "id": "7cbc3c",
+      "name": "Mrs Aaliyah Williams",
+      "debt": 1000
     }
   ]
 }
