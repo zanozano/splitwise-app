@@ -1,0 +1,27 @@
+{
+  "functions": {
+    "source": "src",
+    "ignore": [
+      "**/node_modules/**",
+      "**/*.test.js"
+    ]
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "function": "app"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
