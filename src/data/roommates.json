@@ -1,13 +1,23 @@
 {
   "roommates": [
     {
-      "id": "7cbc3c",
-      "name": "Mrs Aaliyah Williams",
-      "debt": 1000
+      "id": "aa49c3",
+      "name": "Mrs Olena Hristoviy",
+      "debt": 0
     },
     {
-      "id": "047e5c",
-      "name": "Mrs Andrea Núñez",
+      "id": "794bb2",
+      "name": "Ms مریم رضاییان",
+      "debt": 0
+    },
+    {
+      "id": "bd06c5",
+      "name": "Mrs Edilaine Barbosa",
+      "debt": 0
+    },
+    {
+      "id": "af4ab3",
+      "name": "Miss Justine Sanchez",
       "debt": 0
     }
   ]

@@ -39,6 +39,19 @@ const getRoommates = async () => {
         const res = await fetch(`${API_URL}/roommates`);
         const data = await res.json();
         roommates = data.roommates;
+        const elementsToEnable = [
+            'addExpenseButton',
+            'roommatesSelect',
+            'activity',
+            'amount',
+        ];
+
+        elementsToEnable.forEach((elementId) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.disabled = roommates.length === 0;
+            }
+        });
     } catch (error) {
         console.error('Error fetching roommates:', error);
     }
@@ -134,7 +147,7 @@ const updateExpense = async () => {
     };
 
     try {
-        await fetchData(`http://localhost:3000/expense/${expenseId}`, {
+        await fetchData(`${API_URL}/expense/${expenseId}`, {
             method: 'PUT',
             body: JSON.stringify(newExpense),
             headers: {

@@ -1,11 +1,4 @@
 {
-  "functions": {
-    "source": "src",
-    "ignore": [
-      "**/node_modules/**",
-      "**/*.test.js"
-    ]
-  },
   "hosting": {
     "public": "public",
     "ignore": [
