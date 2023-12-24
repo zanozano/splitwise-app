@@ -155,7 +155,7 @@ const updateExpense = async () => {
             },
         });
         showMessage('success', 'Expense edited successfully', '');
-        $('#exampleModal').modal('hide');
+        $('#modalExpense').modal('hide');
         renderData();
     } catch (error) {
         showMessage('error', 'Error', `Failed to edit expense. ${error.message}`);
@@ -217,7 +217,6 @@ const renderData = async () => {
             `);
         });
 
-
         $('#expenseList').html('');
         expenses.forEach((expense) => {
             $('#expenseList').append(`
@@ -227,7 +226,7 @@ const renderData = async () => {
                     <td>${expense.amount}</td>
                     <td>
                         <span class="btn-container">
-                            <i class="fas fa-edit text-warning btn-container__icon" onclick="editExpense('${expense.id}')" data-toggle="modal" data-target="#exampleModal"></i>
+                            <i class="fas fa-edit text-warning btn-container__icon" onclick="editExpense('${expense.id}')" data-toggle="modal" data-target="#modalExpense"></i>
                             <i class="fas fa-trash-alt text-danger btn-container__icon" onclick="deleteExpense('${expense.id}')"></i>
                         </span>
                     </td>

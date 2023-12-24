@@ -1,3 +1,10 @@
 {
-  "expenses": []
+  "expenses": [
+    {
+      "id": "dd886b",
+      "roommate": "Ms مریم رضاییان",
+      "activity": "Professional Cleaning Service",
+      "amount": 3
+    }
+  ]
 }

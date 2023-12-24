@@ -8,7 +8,16 @@
     "scss": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css",
     "start": "nodemon src/server.js"
   },
-  "keywords": ["SplitWise", "expense sharing", "financial harmony", "roommates", "shared expenses", "bills", "budget", "money management"],
+  "keywords": [
+    "SplitWise",
+    "expense sharing",
+    "financial harmony",
+    "roommates",
+    "shared expenses",
+    "bills",
+    "budget",
+    "money management"
+  ],
   "author": "Cristobal Manzano",
   "license": "ISC",
   "dependencies": {
@@ -17,9 +26,7 @@
     "node-sass": "^9.0.0",
     "nodemon": "^2.0.15",
     "sweetalert2": "^11.10.1",
+    "update": "^0.7.4",
     "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.0"
   }
 }
