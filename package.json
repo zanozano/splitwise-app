@@ -1,15 +1,15 @@
 {
-  "name": "prueba_api_rest_roommates",
-  "version": "1.0.0",
-  "description": "",
+  "name": "splitwise",
+  "version": "2.0.0",
+  "description": "Simplify expense sharing with SplitWise. Achieve financial harmony with roommates, sharing bills and smiles. Manage your shared expenses effortlessly.",
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css",
     "start": "nodemon src/server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["SplitWise", "expense sharing", "financial harmony", "roommates", "shared expenses", "bills", "budget", "money management"],
+  "author": "Cristobal Manzano",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
