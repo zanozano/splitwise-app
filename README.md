@@ -1,6 +1,6 @@
 # SplitWise Expense Sharing App
 
-![SplitWise Logo](./public/assets/img/brand.svg){:height="64px" width="64px"}
+![SplitWise Brand](./public/assets/img/brand.svg)
 
 ## Description
 
@@ -36,6 +36,7 @@ Simplify expense sharing with SplitWise, a web application designed to streamlin
 - [Contributions](#contributions)
 - [Author](#author)
 - [Repository](#repository)
+- [Live Preview](#live-preview)
 
 ## Usage
 
@@ -94,3 +95,7 @@ Author: Cristobal Manzano
 
 - Type: Git
 - URL: [Splitwise App](https://github.com/zanozano/splitwise-app.git)
+
+## Live Preview
+
+Explore the live preview of the SplitWise Expense Sharing App at [https://splitwise-function.web.app/](https://splitwise-function.web.app/)
