@@ -50,7 +50,7 @@ Make sure you have the following tools installed on your system:
 Clone this repository using Git. Open your terminal and run the following command:
 
 ```bash
-git clone https://github.com/your-username/splitwise-app.git
+git clone https://github.com/zanozano/splitwise-app.git
 ```
 
 ### Install Dependencies
@@ -93,4 +93,4 @@ Author: Cristobal Manzano
 ## Repository
 
 - Type: Git
-- URL: [github.com/your-username/splitwise-app](https://github.com/your-username/splitwise-app.git)
+- URL: [Splitwise App](https://github.com/zanozano/splitwise-app.git)
