@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://splitwise-app-0tui.onrender.com/';
 let roommates = [];
 let expenses = [];
 let activities = [];
