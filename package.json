@@ -2,11 +2,11 @@
   "name": "splitwise",
   "version": "2.0.0",
   "description": "Simplify expense sharing with SplitWise. Achieve financial harmony with roommates, sharing bills and smiles. Manage your shared expenses effortlessly.",
-  "main": "src/server.js",
+  "main": "./api/server.jsserver.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css",
-    "start": "node src/server.js"
+    "start": "node ./api/server.js"
   },
   "keywords": [
     "SplitWise",
