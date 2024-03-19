@@ -3,12 +3,12 @@
     {
       "id": "aa49c3",
       "name": "Mrs Olena Hristoviy",
-      "debt": 0
+      "debt": 19000
     },
     {
       "id": "794bb2",
       "name": "Ms مریم رضاییان",
-      "debt": 3
+      "debt": 0
     },
     {
       "id": "bd06c5",
@@ -23,6 +23,31 @@
     {
       "id": "4794ef",
       "name": "Ms Norah David",
+      "debt": 0
+    },
+    {
+      "id": "0ca803",
+      "name": "Mr Johnny Simmmons",
+      "debt": 1000
+    },
+    {
+      "id": "c4ab6b",
+      "name": "Mr Gene Foster",
+      "debt": 0
+    },
+    {
+      "id": "4a6df4",
+      "name": "Mr Haroldo Novaes",
+      "debt": 0
+    },
+    {
+      "id": "0669a6",
+      "name": "Mr Celal Scheffel",
+      "debt": 0
+    },
+    {
+      "id": "3716f2",
+      "name": "Mr Kenneth Totland",
       "debt": 0
     }
   ]

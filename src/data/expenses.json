@@ -1,10 +1,16 @@
 {
   "expenses": [
     {
-      "id": "dd886b",
-      "roommate": "Ms مریم رضاییان",
-      "activity": "Professional Cleaning Service",
-      "amount": 3
+      "id": "07c3a0",
+      "roommate": "Mrs Olena Hristoviy",
+      "activity": "Outdoor Adventure Day",
+      "amount": 19000
+    },
+    {
+      "id": "503c26",
+      "roommate": "Mr Johnny Simmmons",
+      "activity": "Group Fitness Session",
+      "amount": 1000
     }
   ]
 }
