@@ -1,11 +1,11 @@
-const config = require('../src/constants.js');
+const config = require('./constants.js');
 const { HTML_FILE_PATH, ROOMMATES_JSON_PATH, EXPENSES_JSON_PATH, ACTIVITIES_JSON_PATH } = config;
 const express = require('express');
 const fs = require('fs');
 
 //* Import
-const { handleError } = require('../src/utils.js');
-const { addRoommate, addExpense, editExpense, deleteExpense } = require('../src/functions.js');
+const { handleError } = require('./utils.js');
+const { addRoommate, addExpense, editExpense, deleteExpense } = require('./functions.js');
 //* Import
 
 const createApp = () => {
