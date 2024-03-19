@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css",
-    "start": "nodemon src/server.js"
+    "start": "node src/server.js"
   },
   "keywords": [
     "SplitWise",
